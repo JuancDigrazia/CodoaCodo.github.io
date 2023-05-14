@@ -1,0 +1,55 @@
+#ticket{
+    color: green;
+}
+#menunav{
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+
+.carousel-inner{
+    filter:brightness(0.3);
+  }
+
+  .carousel-item{
+    background-position: center;
+    background-size: cover;
+    height: 770px;
+  }
+
+.texto{
+        font-size: 15px;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.titulin{
+    margin-top: -50px;
+}
+
+#JS {
+  background-color: rgb(255, 187, 0);
+  color: black;
+}
+#Re{
+    background-color: rgb(12, 143, 143);
+}
+#Ne{
+    background-color: grey;
+}
+#St{
+    background-color: red;
+}
+.barra{
+    background-color: rgb(43,48,53);
+    margin-top: 1%;
+    color: aliceblue;
+}
+
+.cartas{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
