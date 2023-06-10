@@ -10,6 +10,8 @@
 </head>
 <body>
     <script src="bootstrap.bundle.min.js"></script>
+    <script src="Script.js"></script>
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="Imagenes/codoacodo.png" alt="codoacodo" width="110px"></a>
@@ -37,9 +39,80 @@
         </div>
       </div>
   </nav>
-
+<div class="row d-flex justify-content-center m-2">
+  <div class="card text-bg-primary m-2 mb-3 col-12 col-sm-12 col-md-6 col-lg-4" style="width: 18rem;" id="cartas">
+    <div class="card-body text-center">
+      <h5 class="card-title">Estudiante</h5>
+      <h6 class="card-subtitle mb-2">Tiene un descuento</h6>
+      <p class="card-text fw-bold">80%</p>
+      <p class="card-text fs-6">* presentar documentacion</p>
+    </div>
+  </div>
+  <div class="card text-bg-success m-2 mb-3 col-12 col-sm-12 col-md-6 col-lg-4" style="width: 18rem;" id="cartas">
+    <div class="card-body text-center">
+      <h5 class="card-title">Trainee</h5>
+      <h6 class="card-subtitle mb-2">Tiene un descuento</h6>
+      <p class="card-text fw-bold">50%</p>
+      <p class="card-text fs-6">* presentar documentacion</p>
+    </div>
+    </div>
+    <div class="card text-bg-warning m-2 mb-3 col-12 col-sm-12 col-md-6 col-lg-4" style="width: 18rem;" id="cartas">
+    <div class="card-body text-center">
+      <h5 class="card-title">Junior</h5>
+      <h6 class="card-subtitle mb-2">Tiene un descuento</h6>
+      <p class="card-text fw-bold">15%</p>
+      <p class="card-text fs-6">* presentar documentacion</p>
+    </div>
+  </div>
+</div>
   
-    <footer class="container-flow">
+</section class="container m-5">
+<div class="row m-5" id="orador">
+  <div class="col-12 text-center">
+    <h5>VENTA</h5>
+    <h2>VALOR DE TICKET $200</h2> 
+  </div>
+
+<div class="col-12 mb-5">
+  <div class="row g-2">
+    <div class="col-6">
+      <input type="text" class="form-control" placeholder="Nombre">
+    </div>
+    <div class="col-6">
+      <input type="text" class="form-control" placeholder="Apellido">
+    </div>
+    <div class="col-12">
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo@mail.com">
+    </div>
+    <div class="mb-3 col-6">
+      <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
+      <input type="text" class="form-control" name=NumCantidad placeholder="Cantidad" id="NumCantidad">
+    </div>
+    <div class="mb-3 col-6">
+      <label for="Categoria" class="form-label">Categoria</label>
+      <select class="form-select" name=categoriaSelect id="categoriaSelect">
+        <option value="">-Seleccione-</option>
+        <option value="0">Regular</option>
+        <option value="1">Estudiante</option>
+        <option value="2">Trainee</option>
+        <option value="3">Junior</option>
+      </select>
+    </div>
+    <div class="m-2 col-12">
+      <p class="form-control bg-info-subtle"  id="parrafo">Total a Pagar: $ </p>
+    </div>
+
+  <div class="col-6 mt-2">
+    <button type="button" class="btn btn-success w-100" id="borrar">Borrar</button>
+  </div>
+  <div class="col-6 mt-2">
+    <button type="button" class="btn btn-success w-100" id="resumen">Resumen</button>
+  </div>
+</div>
+</div>
+</section>
+
+    <footer class="container-flow fixed-bottom">
         <div class="row">
           <div class="col-12 bg-footer d-flex justify-content-around align-items-center barra">
             <a class="a-reset p-2 alink" href="#">Preguntas <br>Frecuentes</a>
