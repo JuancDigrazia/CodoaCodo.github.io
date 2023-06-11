@@ -9,7 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="bootstrap.bundle.min.js"></script>
     <script src="Script.js"></script>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -76,20 +75,20 @@
 <div class="col-12 mb-5">
   <div class="row g-2">
     <div class="col-6">
-      <input type="text" class="form-control" placeholder="Nombre">
+      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
     </div>
     <div class="col-6">
-      <input type="text" class="form-control" placeholder="Apellido">
+      <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
     </div>
     <div class="col-12">
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo@mail.com">
+      <input type="email" class="form-control" id="ermail" name="ermail" placeholder="Correo@mail.com">
     </div>
     <div class="mb-3 col-6">
-      <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
+      <label class="form-label">Cantidad</label>
       <input type="text" class="form-control" name=NumCantidad placeholder="Cantidad" id="NumCantidad">
     </div>
     <div class="mb-3 col-6">
-      <label for="Categoria" class="form-label">Categoria</label>
+      <label class="form-label">Categoria</label>
       <select class="form-select" name=categoriaSelect id="categoriaSelect">
         <option value="">-Seleccione-</option>
         <option value="0">Regular</option>
@@ -99,14 +98,14 @@
       </select>
     </div>
     <div class="m-2 col-12">
-      <p class="form-control bg-info-subtle"  id="parrafo">Total a Pagar: $ </p>
+      <p class="form-control bg-info-subtle"  id="parrafo">Total a Pagar: $</p>
     </div>
 
   <div class="col-6 mt-2">
-    <button type="button" class="btn btn-success w-100" id="borrar">Borrar</button>
+    <button class="btn btn-success w-100" id="borrar">Borrar</button>
   </div>
   <div class="col-6 mt-2">
-    <button type="button" class="btn btn-success w-100" id="resumen">Resumen</button>
+    <button class="btn btn-success w-100" id="PRECIO" name="PRECIO">Resumen</button>
   </div>
 </div>
 </div>

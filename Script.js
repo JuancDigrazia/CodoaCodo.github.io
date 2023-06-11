@@ -2,37 +2,34 @@ const valorTicket = 200;
 
 let descuentoEstudiante = 0.80;
 let descuentoTrainee = 0.50;
-let descuentoJunior= 0.15;
+let descuentoJunior = 0.15;
 
 const cantidad = document.querySelector('#NumCantidad');
 const categoria = document.querySelector('#categoriaSelect');
-const botonborrar = document.querySelector('#borrar');
-const botonresumen = document.querySelector('#resumen');
+const botonBorrar = document.querySelector('#borrar');
+const botonResumen = document.querySelectorAll("#PRECIO");
 const parrafo = document.querySelector('#parrafo');
 
 function totalPagar() {
-    let totalValor = parseInt(cantidad.value) * valorTicket;
-    
-    if (categoria.value == 1) {
-        totalValor = totalValor - (totalValor * descuentoEstudiante);   
-    }
-    else if (categoria.value == 2) {
-        totalValor = totalValor - (totalValor * descuentoTrainee);
-    }
-    else if (categoria.value == 3) {
-        totalValor = totalValor - (totalValor * descuentoJunior);
-    }
-    else if (categoria.value == 0) {
-        totalValor = totalValor
-    }
-    
-    parrafo.innerHTML = `Total a Pagar: $ ${totalValor}`;
+  let totalValor = parseInt(cantidad.value) * valorTicket;
 
+  if (categoria.value == 1) {
+    totalValor *= descuentoEstudiante;
+  } else if (categoria.value == 2) {
+    totalValor *= descuentoTrainee;
+  } else if (categoria.value == 3) {
+    totalValor *= descuentoJunior;
+  } else if (categoria.value == 0) {
+    totalValor *= 1; 
+  }
+
+  parrafo.innerHTML = `Total a Pagar: $${totalValor}`;
 }
 
-botonresumen.addEventListener('click', totalPagar);
+botonResumen.addEventListener('click', totalPagar);
+// Error en el botonResumen.addEventListener que sale en la consola = Uncaught TypeError: Cannot read properties of null (reading 'addEventListener' at Script.js:29:14
 
-botonborrar.addEventListener('click', () => {
-    parrafo.innerHTML = 'Total a Pagar: '
-    cantidad.value = 0;
+botonBorrar.addEventListener('click', () => {
+  parrafo.innerHTML = 'Total a Pagar:';
+  cantidad.value = 0;
 });
